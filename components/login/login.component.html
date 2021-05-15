@@ -1,0 +1,67 @@
+<swal #successSwal title="Éxito" text="Logueado Correctamente!" icon="success" width='27rem'>
+</swal>
+
+<swal #errorEmail title="Error" text="Email Incorrecto!!" icon="error">
+</swal>
+
+<swal #errorPassword title="Error" text="Password Incorrecto!!" icon="error">
+</swal>
+
+
+
+<div class="container">
+
+  <div class="box">
+    <div class="logo"> </div>
+    <div class="box-min">
+
+      <form novalidate [formGroup]='loginForm' (ngSubmit)="login()">
+        <div class="form-st">
+          <div class="brand-wrapper">
+            <img class="logo-cover" style="width: 30%;" src="../../../assets/images/logo.jfif" alt="">
+          </div>
+
+          <p class="title">Sign into your account</p>
+
+          <div class="inputs">
+            <div>
+              <input formControlName="email" type="email" name="email" class="form-control input-style"
+                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" autocomplete="off">
+              <p class="text-danger"
+                *ngIf="loginForm.controls['email'].errors?.required && (loginForm.controls['email'].touched || submitted)">
+                <span class="fa fa-exclamation-triangle"></span>
+                Email is required
+              </p>
+              <p class="text-warning"
+                *ngIf="loginForm.controls['email'].errors?.email && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
+                <span class="fa fa-exclamation-triangle"></span>
+                Enter a valid email address
+              </p>
+            </div>
+
+            <div>
+              <input formControlName="pass" type="password" class="form-control input-style" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Password" name="password" autocomplete="off">
+
+              <p class="text-danger"
+                *ngIf="loginForm.controls['pass'].errors?.required && (loginForm.controls['pass'].touched || submitted)">
+                <span class="fa fa-exclamation-triangle"></span>
+                Password is required
+              </p>
+            </div>
+          </div>
+
+          <div class="btn-st">
+            <button type="button" class="btn btn-dark btn-style" [disabled]="loading" type="submit">
+              <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"> </span>
+              Login
+            </button>
+          </div>
+          <p>Don't have an account?<button type="button" class="btn btn-link" (click)='goToRegister();'>Register
+              here</button> </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

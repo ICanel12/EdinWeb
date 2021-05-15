@@ -1,0 +1,42 @@
+<swal #successSwal title="Éxito" text="Modulo Agregado Correctamente!" icon="success">
+</swal>
+
+<swal #errorQR title="Error" text="QR Invalido!!" icon="error">
+</swal>
+
+
+<div class="cover_page">
+  <h2 class="animate__animated animate__bounce">Edin Web</h2>
+</div>
+
+<div class="container-fluid">
+  <div class="col-12 container-info">
+
+    <div class="container-all">
+      <div class="col-xl-8 col-md-8 col-12 container-one">
+        <h4 class="title">INSTRUCCIONES</h4>
+        <p>Escanea el código de barras que viene en el módulo de los guantes para poder obtener el resultado del
+          rendimiento cognitivo de los alumnos</p>
+
+        <qr-scanner [buttonClass]="'btn btn-info'" (capturedQr)="capturedQr($event)" (error)="onError($event)"
+          [allowUpload]="true"></qr-scanner>
+
+        <div class="performance-info" style="margin-top: 14em;">
+          <h4 class="title">WEBSITE DE RENDIMIENTO</h4>
+          <p>Podrás observar el rendimiento cognitivo de todos los alumnos en la nube de manera instantanea</p>
+          <p>Los padres de familia llevarán el control de participación y rendimiento de sus hijos</p>
+          <p>Podrás observar el mejoramiento de aprendizaje de cada alumno a través de nuestras estadísticas</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4">
+        <img src="assets/images/qr-code.png" class="qr-img" alt="qr-code" height="250px" width="250px">
+      </div>
+
+    </div>
+    <div class="col-12">
+      <img src="../../../assets/images/portada-4.jfif" class="mitt-img">
+    </div>
+
+  </div>
+</div>

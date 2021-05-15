@@ -1,0 +1,286 @@
+body{
+    background-color: #282936;
+}
+
+
+.container-fluid{
+    width: 95%;
+    margin: 0 auto !important;
+    margin-top: 1em !important;
+    margin-bottom: 2em !important;
+    padding-top: 1em;
+    background: white;
+}
+
+.row{
+
+    margin-right: 0px; 
+    margin-left: 0px;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #0f67b2;
+    border-color: #182c3d;
+}
+
+.container {
+    position: relative;
+    margin-top: 1%;
+    width: 100%;
+    max-width: 800px;
+    max-height: 300px !important;
+}
+
+.container-scanner{
+    text-align: center;
+    margin-left: 20% !important;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 65%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(0, 201, 174);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: rgb(0, 124, 207);
+}
+
+.boton{
+    margin-top: 1%;
+    margin-left: 1%;
+    display: block;
+}
+
+.card{
+    background-color: #1F1B25;
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 2%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-body{
+    background-color:#e9e6e6;
+}
+
+.img-fluid{
+    height: 18em;
+    width: 21em;
+    margin: 0 auto;
+}
+
+.imagen{
+    width: 286px;
+    height: 250px;
+}
+
+.card-title{
+    text-align: center;
+    color: black;
+}
+
+.modal-title{
+    text-align: center;
+}
+
+.delete{
+    margin-left: 32% !important;
+}   
+
+th{
+    color: white;
+}
+
+td{
+    color: white;
+}
+
+.card {
+    transition: all 0.2s ease-in-out;
+    margin: 2% 1% 1% 1%;
+}
+
+.card:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+
+.container-title{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+@media (max-width: 1496px){
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-body a{
+        margin-top: 7px;
+    }
+}
+
+
+@media (max-width: 1497px){
+    
+    .card-body {
+        display: block;
+    }
+}
+
+
+@media (max-width: 969px){
+
+    .card-body .card-title{
+        font-size: 22px !important;
+    }
+
+}
+
+@media (max-width: 917px){
+
+    .card-body .card-title{
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 760px){
+
+    .card-body .card-title{
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width: 577px){
+
+    .wrap{
+        margin-left: 0px !important;
+    }
+
+    .card-body {
+        display: block;
+    }
+}
+
+
+
+@media (max-width: 415px){
+    .img-fluid{
+        height: 16.5em;
+    }
+
+    .container-fluid{
+        width: 100%;
+        background: none;
+        margin-top: 0em !important;
+    }
+
+    .container-title{
+        margin-bottom: 0px !important;
+    }
+
+    .card-body{
+        text-align: center;
+    }
+
+    h2{
+        padding-left: 30px;
+    }
+}
+
+
+@media (width: 320px){
+
+    .card-body .card-title{
+        font-size: 23px !important;
+    }
+
+    .img-fluid{
+        height: 13em;
+    }
+}
+
+@media (width: 414px){
+
+    .img-fluid{
+        height: 17em;
+    }
+}
+
+@media (width: 768px){
+
+    .img-fluid{
+        height: 12em;
+    }
+
+    .card-body{
+        text-align: center;
+    }
+
+    .card-body .card-title{
+        font-size: 17px !important;
+    }
+}
+
+
+@media (width: 1024px){
+    .card-body{
+        text-align: center;
+    }
+}
+
+
+
+@media (width: 280px){
+    .img-fluid{
+        height: 12em;
+    }
+
+    .card-body .card-title{
+        font-size: 19px !important;
+    }
+}
+
+
+@media (width: 540px){
+    .card-deck{
+        width: 378px !important;
+        margin: 0 auto !important;
+    }
+
+    .container-fluid{
+        margin: 0 auto !important;
+         width: 86%;
+    }
+
+    h2{
+        padding-left: 24px;
+    }
+}
+
+
+

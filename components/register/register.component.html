@@ -1,0 +1,73 @@
+<swal #successSwal title="Éxito" text="Registrado Correctamente" icon="success">
+</swal>
+
+<swal #errorSwal title="Error" text="Registro Fallido" icon="error">
+</swal>
+
+
+<div class="container">
+  <div class="box">
+    <form [formGroup]='registerForm' (ngSubmit)="register()">
+      <div class="brand-wrapper">
+        <img class="logo-cover" src="../../../assets/images/logo.jfif" alt="">
+      </div>
+
+      <p class="title">Create Account</p>
+      <div class="inputs">
+        <input formControlName="firstName" type="text" name="firstName" class="form-control input-style"
+          id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" autocomplete="off">
+        <p class="text-danger" *ngIf="registerForm.controls['firstName'].errors?.required && submitted">
+          <span class="fa fa-exclamation-triangle"></span>
+          First name is required
+        </p>
+
+        <input formControlName="lastName" type="text" name="lastName" class="form-control input-style"
+          id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name" autocomplete="off">
+        <p class="text-danger" *ngIf="registerForm.controls['lastName'].errors?.required && submitted">
+          <span class="fa fa-exclamation-triangle"></span>
+          Last name is required
+        </p>
+
+        <input formControlName="username" type="text" name="username" class="form-control input-style"
+          id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" autocomplete="off">
+        <p class="text-danger" *ngIf="registerForm.controls['username'].errors?.required && submitted">
+          <span class="fa fa-exclamation-triangle"></span>
+          Username is required
+        </p>
+
+        <input formControlName="email" type="text" name="email" class="form-control input-style" id="exampleInputEmail1"
+          aria-describedby="emailHelp" placeholder="Your Email" autocomplete="off">
+        <p class="text-danger" *ngIf="registerForm.controls['email'].errors?.required && submitted">
+          <span class="fa fa-exclamation-triangle"></span>
+          Email is required
+        </p>
+
+        <p class="text-warning"
+          *ngIf="registerForm.controls['email'].errors?.email && (registerForm.controls['email'].dirty || registerForm.controls['email'].touched)">
+          <span class="fa fa-exclamation-triangle"></span>
+          Enter a valid email address
+        </p>
+
+        <input formControlName="pass" type="password" name="password" class="form-control input-style"
+          id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password" autocomplete="off">
+        <p class="text-danger" *ngIf="registerForm.controls['pass'].errors?.required && submitted">
+          <span class="fa fa-exclamation-triangle"></span>
+          Password is required
+        </p>
+        <p class="text-warning"
+          *ngIf="registerForm.controls['pass'].errors?.minlength && (registerForm.controls['pass'].dirty || registerForm.controls['email'].touched)">
+          your password must have 8 characters
+          <span class="fa fa-exclamation-triangle"></span>
+        </p>
+
+        <div style="text-align: center;">
+          <button [disabled]="loading" type="submit" class="btn btn-dark btn-style">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+            Register
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>

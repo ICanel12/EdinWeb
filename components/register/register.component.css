@@ -1,0 +1,197 @@
+body{
+    background: #d1d1cf !important; 
+    background: -webkit-linear-gradient(to right, #d1d1cf , #bbb9d8) !important;
+    background: linear-gradient(to right, #d1d1cf ,  #bbb9d8) !important; 
+}
+
+.container{
+    min-height: 102vh; display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.box{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    height: 42em;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px 0 rgb(172 168 168 / 43%);
+}
+
+
+.brand-wrapper{
+    text-align: center;
+}
+
+
+p{
+    font-family: "Karla", sans-serif;
+    text-align: center;
+}
+
+.title{
+    font-size: 25px;
+    color: dimgray;
+    font-weight: bold;
+    padding-top: 22px;
+}
+
+.inputs{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.btn-style{
+    font-size: 20px !important;
+    height: 2.2em !important;
+    width: 14em;
+}
+
+.input-style{
+    height: 3em !important;
+    margin-top: 20px;
+}
+
+
+.form-control {
+    min-height: 20%;
+    background: #fff;
+    box-shadow: none !important;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.form-control:focus {
+    border-color: #6692e5;
+}
+
+.btn-style{
+    margin: 0 auto; 
+    margin-top: 30px; 
+    width: 60%;
+}
+
+
+.logo-cover{
+    width: 22%; 
+    padding-top: 23px;
+}
+
+
+@media (max-width: 1344px){
+    .container{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 1100px){
+    .container{
+        width: 56%;
+    }
+}
+
+
+@media (max-width: 984px){
+    .container{
+        width: 60%;
+    }
+}
+
+@media (max-width: 880px){
+    .container{
+        width: 65%;
+    }
+}
+
+
+@media (max-width: 780px){
+    .container{
+        width: 74%;
+    }
+}
+
+
+
+
+
+@media (width: 540px){
+    .box{
+        border-radius: 0px;
+        height: 38em;
+    }
+
+    .inputs{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .logo-cover{
+        width: 28%;
+    }
+
+}
+
+@media (max-width: 415px){
+    .container{
+        width: 98%;
+        min-height: 92vh;
+    }
+
+    .inputs{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .box{
+        height: 38em;
+        border-radius: 10px;
+    }
+
+    
+    .logo-cover{
+        width: 26%;
+    } 
+
+    .title{
+        font-size: 24px;
+    }
+}
+
+
+
+
+@media (width: 360px){
+    .container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (width: 320px){
+    .container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (width: 280px){
+    .inputs{
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .title{
+        font-size: 22px;
+    }
+
+    .box{
+        height: 36em;
+    }
+}

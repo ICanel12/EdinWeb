@@ -1,0 +1,106 @@
+body{
+    background-color: #282936;
+}
+
+.container-title{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.container-general{
+    width: 95%;
+    margin: 0 auto;
+    background: white;
+    min-height: 70vh;
+    padding-top: 1em; padding-bottom: 3em;     
+    margin-bottom: 2em;
+}
+
+.boton{
+    margin-top: 1%;
+    margin-left: 1%;
+    display: block;
+}
+
+.card{
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+.imagen{
+    width: 286px;
+    height: 250px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.modal-title{
+    text-align: center;
+}
+
+.delete{
+    margin-left: 32% !important;
+}   
+
+th{
+    color: white;
+}
+
+td{
+    color: black;
+}
+
+.table{
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+}
+
+tr{
+    text-align: center;
+}
+
+
+@media (max-width: 540px){
+
+    table{
+        width: 100%;
+    }
+
+    table tr{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        padding: 1em;
+        margin-bottom: 1px;
+    }
+
+    table thead{
+        display: none;
+    }
+
+    tr{
+        text-align: inherit;
+    }
+    
+    table td[data-title]{
+        display: flex;
+    }
+
+    table td[data-title]::before{
+        content: attr(data-title);
+        width: 130px;
+        color: gray;
+        font-weight: bold;
+    }
+
+    .btn-table{
+        text-align: center;
+        padding-top: 25px;
+    }
+}

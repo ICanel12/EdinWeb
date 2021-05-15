@@ -1,0 +1,182 @@
+<swal #successSwal title="Éxito" text="Modulo Agregado Correctamente!" icon="success">
+</swal>
+
+<swal #errorQR title="Error" text="QR Invalido!!" icon="error">
+</swal>
+
+<div class="container-title">
+<h2 class="animate__animated animate__bounce">Modulos</h2>
+</div>
+
+<div class="container-fluid row col-12 mt-4 wrap">
+
+    <div class="card-deck col-xl-3 col-md-4 col-sm-6 ml-1" *ngIf="modules != null">
+        <div class="card mb-3" *ngFor='let item of modules'>
+            <img class="card-img-top img-fluid" src="assets/images/mod.jpg" alt="module">
+            <div class="card-body">
+                <h4 class="card-title">Modulo: {{item.module}}</h4>
+                <a class="btn btn-info" [routerLink]="['/statistics',item.idModule]" style="margin-right: 5px;">
+                    <i class="fas fa-chart-bar"></i>
+                    Estadísticas
+                </a>
+                <a class="btn btn-info" [routerLink]="['/operations',item.idModule]">
+                    <i class="fas fa-calculator"></i>
+                    Operaciones
+                </a>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="modules == null">
+        <img src="../../../assets/images/QrHome.jpg" alt="Snow" style="width:100%">
+        <row>
+            <div class="col-12 container-scanner">
+                <!-- <qr-scanner [buttonClass]="'btn btn-info'" (capturedQr)="capturedQr($event)" (error)="onError($event)"
+                    [allowUpload]="true"></qr-scanner> -->
+            </div>
+        </row>
+    </div>
+
+    <div class="card-deck col-xl-3 col-md-4 col-sm-6 ml-1" *ngIf="modules != null">
+        <div class="card mb-3" *ngFor='let item of modules'>
+            <img class="card-img-top img-fluid" src="assets/images/mod.jpg" alt="module">
+            <div class="card-body">
+                <h4 class="card-title">Modulo: {{item.module}}</h4>
+                <a class="btn btn-info" [routerLink]="['/statistics',item.idModule]" style="margin-right: 5px;">
+                    <i class="fas fa-chart-bar"></i>
+                    Estadísticas
+                </a>
+                <a class="btn btn-info" [routerLink]="['/operations',item.idModule]">
+                    <i class="fas fa-calculator"></i>
+                    Operaciones
+                </a>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="modules == null">
+        <img src="../../../assets/images/QrHome.jpg" alt="Snow" style="width:100%">
+        <row>
+            <div class="col-12 container-scanner">
+                <!-- <qr-scanner [buttonClass]="'btn btn-info'" (capturedQr)="capturedQr($event)" (error)="onError($event)"
+                    [allowUpload]="true"></qr-scanner> -->
+            </div>
+        </row>
+    </div>
+
+    <div class="card-deck col-xl-3 col-md-4 col-sm-6 ml-1" *ngIf="modules != null">
+        <div class="card mb-3" *ngFor='let item of modules'>
+            <img class="card-img-top img-fluid" src="assets/images/mod.jpg" alt="module">
+            <div class="card-body">
+                <h4 class="card-title">Modulo: {{item.module}}</h4>
+                <a class="btn btn-info" [routerLink]="['/statistics',item.idModule]" style="margin-right: 5px;">
+                    <i class="fas fa-chart-bar"></i>
+                    Estadísticas
+                </a>
+                <a class="btn btn-info" [routerLink]="['/operations',item.idModule]">
+                    <i class="fas fa-calculator"></i>
+                    Operaciones
+                </a>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="modules == null">
+        <img src="../../../assets/images/QrHome.jpg" alt="Snow" style="width:100%">
+        <row>
+            <div class="col-12 container-scanner">
+                <!-- <qr-scanner [buttonClass]="'btn btn-info'" (capturedQr)="capturedQr($event)" (error)="onError($event)"
+                    [allowUpload]="true"></qr-scanner> -->
+            </div>
+        </row>
+    </div>
+
+    <div class="card-deck col-xl-3 col-md-4 col-sm-6 ml-1" *ngIf="modules != null">
+        <div class="card mb-3" *ngFor='let item of modules'>
+            <img class="card-img-top img-fluid" src="assets/images/mod.jpg" alt="module">
+            <div class="card-body">
+                <h4 class="card-title">Modulo: {{item.module}}</h4>
+                <a class="btn btn-info" [routerLink]="['/statistics',item.idModule]" style="margin-right: 5px;">
+                    <i class="fas fa-chart-bar"></i>
+                    Estadísticas
+                </a>
+                <a class="btn btn-info" [routerLink]="['/operations',item.idModule]">
+                    <i class="fas fa-calculator"></i>
+                    Operaciones
+                </a>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="modules == null">
+        <img src="../../../assets/images/QrHome.jpg" alt="Snow" style="width:100%">
+        <row>
+            <div class="col-12 container-scanner">
+                <!-- <qr-scanner [buttonClass]="'btn btn-info'" (capturedQr)="capturedQr($event)" (error)="onError($event)"
+                    [allowUpload]="true"></qr-scanner> -->
+            </div>
+        </row>
+    </div>
+
+    <div class="card-deck col-xl-3 col-md-4 col-sm-6 ml-1" *ngIf="modules != null">
+        <div class="card mb-3" *ngFor='let item of modules'>
+            <img class="card-img-top img-fluid" src="assets/images/mod.jpg" alt="module">
+            <div class="card-body">
+                <h4 class="card-title">Modulo: {{item.module}}</h4>
+                <a class="btn btn-info" [routerLink]="['/statistics',item.idModule]" style="margin-right: 5px;">
+                    <i class="fas fa-chart-bar"></i>
+                    Estadísticas
+                </a>
+                <a class="btn btn-info" [routerLink]="['/operations',item.idModule]">
+                    <i class="fas fa-calculator"></i>
+                    Operaciones
+                </a>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="modules == null">
+        <img src="../../../assets/images/QrHome.jpg" alt="Snow" style="width:100%">
+        <row>
+            <div class="col-12 container-scanner">
+                <!-- <qr-scanner [buttonClass]="'btn btn-info'" (capturedQr)="capturedQr($event)" (error)="onError($event)"
+                    [allowUpload]="true"></qr-scanner> -->
+            </div>
+        </row>
+    </div>
+
+    <div class="card-deck col-xl-3 col-md-4 col-sm-6 ml-1" *ngIf="modules != null">
+        <div class="card mb-3" *ngFor='let item of modules'>
+            <img class="card-img-top img-fluid" src="assets/images/mod.jpg" alt="module">
+            <div class="card-body">
+                <h4 class="card-title">Modulo: {{item.module}}</h4>
+                <a class="btn btn-info" [routerLink]="['/statistics',item.idModule]" style="margin-right: 5px;">
+                    <i class="fas fa-chart-bar"></i>
+                    Estadísticas
+                </a>
+                <a class="btn btn-info" [routerLink]="['/operations',item.idModule]">
+                    <i class="fas fa-calculator"></i>
+                    Operaciones
+                </a>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="modules == null">
+        <img src="../../../assets/images/QrHome.jpg" alt="Snow" style="width:100%">
+        <row>
+            <div class="col-12 container-scanner">
+                <!-- <qr-scanner [buttonClass]="'btn btn-info'" (capturedQr)="capturedQr($event)" (error)="onError($event)"
+                    [allowUpload]="true"></qr-scanner> -->
+            </div>
+        </row>
+    </div>
+
+
+
+
+
+
+    
+
+</div>

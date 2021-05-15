@@ -1,0 +1,70 @@
+<div class="container-fluid" style="background:#282936;">
+
+    <div class="general">
+
+        <h1 class="animate__animated animate__bounce">Estadísticas</h1>
+        <div class="container-general">
+            <div class="specific-container">
+                <div class="row">
+                    <h6 class="title">Rendimiento General</h6>
+                </div>
+                <div class="row" #ContainerRef>
+                    <ngx-charts-pie-chart [view]="[ContainerRef.offsetWidth, 300]" [scheme]="colorScheme"
+                        [results]="single" [gradient]="gradientPie" [legend]="showLegendPie"
+                        [legendPosition]="legendPosition" [labels]="showLabels" [doughnut]="isDoughnut"
+                        (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)"
+                        style="fill: white;">
+                    </ngx-charts-pie-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-general">
+        <div class="specific-container">
+            <div class="row">
+                <h6 class="title">Cantidad de respuestas correctas por operación</h6>
+            </div>
+            <div class="row" #ContainerRef2>
+                <ngx-charts-bar-vertical [view]="[ContainerRef2.offsetWidth, 300]" [scheme]="colorScheme"
+                    [results]="single2" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis"
+                    [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
+                    [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" (select)="onSelect($event)"
+                    style="fill: white;">
+                </ngx-charts-bar-vertical>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-general cont-g">
+        <div class="specific-container">
+            <div class="row">
+                <h6 class="title">Rendimiento por Alumno</h6>
+            </div>
+            <div class="row" #ContainerRef3>
+                <ngx-charts-bar-horizontal [view]="[ContainerRef3.offsetWidth, 300]" [scheme]="colorScheme"
+                    [results]="single3" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis"
+                    [legend]="showLegend" (select)="onSelect($event)" (activate)="onActivate($event)"
+                    (deactivate)="onDeactivate($event)" style="fill: white;">
+                </ngx-charts-bar-horizontal>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-general cont-g">
+        <div class="specific-container">
+
+            <div class="row">
+                <h6 class="title" style="margin: 0px auto;">Rendimiento por Habilidades</h6>
+            </div>
+            <div class="row" #ContainerRef4>
+                <ngx-charts-pie-grid [view]="[ContainerRef4.offsetWidth, 300]" [scheme]="colorScheme"
+                    [results]="single4" (select)="onSelect($event)" style="fill: white;">
+                </ngx-charts-pie-grid>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row"> </div>
+</div>
